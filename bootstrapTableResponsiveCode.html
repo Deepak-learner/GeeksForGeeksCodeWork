@@ -1,0 +1,229 @@
+Method 1:
+To make the table responsive on all viewport size, wrap the table within a opening and closing <div> tags, having class “table-responsive” within the opening 
+<div> tag.
+  
+Code:
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1,
+				shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet"
+		href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity=
+"sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+		crossorigin="anonymous">
+
+	<title>Bootstrap | Tables</title>
+
+	<style>
+	h1{
+		color:blue;
+		text-align: center;
+	}
+	div{
+		margin-top: 20px;
+	}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+	<h1>Bootstrap Table Responsive</h1>
+
+	<!-- table-responsive -->
+	<div class="table-responsive">
+		
+		<!-- table -->
+		<table class="table">
+		<thead>
+			<tr>
+			<th scope="col">Head</td>
+			<th scope="col">Head</td>
+			<th scope="col">Head</td>
+			<th scope="col">Head</td>
+			<th scope="col">Head</td>
+			<th scope="col">Head</td>
+			<th scope="col">Head</td>
+			<th scope="col">Head</td>
+			<th scope="col">Head</td>
+			<th scope="col">Head</td>
+			<th scope="col">Head</td>
+			<th scope="col">Head</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			</tr>
+			<tr>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			</tr>
+			<tr>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			<td>Data</td>
+			</tr>
+		</tbody>
+		</table>
+
+	</div>
+	</div>
+</body>
+</html>
+
+
+Method 2: Breakpoint specific
+Use .table-responsive{-sm|-md|-lg|-xl} as needed to create responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave 
+normally and not scroll horizontally.
+
+Code:
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <!-- Required meta tags -->
+    <meta charset="utf-8"> 
+    <meta name="viewport"
+          content="width=device-width, 
+          initial-scale=1, 
+          shrink-to-fit=no"> 
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" 
+          href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity=
+"sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+          crossorigin="anonymous"> 
+  
+    <title>Bootstrap | Tables</title> 
+  
+    <style> 
+    h1{ 
+        color:blue; 
+        text-align: center; 
+    } 
+    div{ 
+        margin-top: 20px; 
+    } 
+    </style> 
+  
+</head> 
+<body> 
+    <div class="container"> 
+    <h1>Bootstrap Table Responsive-sm</h1> 
+  
+    <!-- table-responsive -->
+    <div class="table-responsive-sm"> 
+          
+        <!-- table -->
+        <table class="table"> 
+        <thead> 
+            <tr> 
+            <th scope="col">Head</td> 
+            <th scope="col">Head</td> 
+            <th scope="col">Head</td> 
+            <th scope="col">Head</td> 
+            <th scope="col">Head</td> 
+            <th scope="col">Head</td> 
+            <th scope="col">Head</td> 
+            <th scope="col">Head</td> 
+            <th scope="col">Head</td> 
+            <th scope="col">Head</td> 
+            <th scope="col">Head</td> 
+            <th scope="col">Head</td> 
+            </tr> 
+        </thead> 
+        <tbody> 
+            <tr> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            </tr> 
+            <tr> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            </tr> 
+            <tr> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            <td>Data</td> 
+            </tr> 
+        </tbody> 
+        </table> 
+  
+    </div> 
+    </div> 
+</body> 
+</html>
+
+
+
